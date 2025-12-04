@@ -1,0 +1,15 @@
+[Unit]
+Description=Obstacle Vision System (Dahua + LIDAR + Hailo-8 + RealSense)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/tactical-ar
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/tactical-ar/venv/bin/python3 /opt/tactical-ar/dahua_ar_vision_system.py
+Restart=always
+RestartSec=5
+WatchdogSec=30
+
+[Install]
+WantedBy=multi-user.target
