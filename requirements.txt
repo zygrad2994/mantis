@@ -1,0 +1,14 @@
+pyzmq
+PyQt5
+numpy
+opencv-python
+pyopengl
+pyopengl-accelerate
+psutil
+scipy
+rclpy
+sensor-msgs
+geometry-msgs
+hailo-sdk-client
+pyrealsense2
+ydlidar
